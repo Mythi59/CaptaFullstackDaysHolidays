@@ -9,7 +9,7 @@ const Header = () => {
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white bg-orange-400 hover:bg-orange-600 p-3 rounded-full shadow-lg shadow-orange-500/50"
+            className="text-white bg-blue-300 hover:bg-blue-500 p-3 rounded-full shadow-lg shadow-blue-500/50"
           >
             Git
           </a>
