@@ -2,19 +2,46 @@ const Form = () => {
   return (
     <>
       <form className="grid grid-cols-5 grid-rows-5 gap-2">
-        <label className="col-start-3 row-start-1">Fecha</label>
-        <fieldset className="col-start-3 border-2">
-          <input type="datetime-local" className="date" />
+        <fieldset className="col-start-3 rounded-2xl">
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Fecha <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="date"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+              placeholder="Date"
+              required
+            />
+          </div>
         </fieldset>
-        <label className="col-start-3 row-start-3">Hora</label>
-        <fieldset className="col-start-3 border-2">
-          <input type="time" className="hora" />
+        <fieldset className="col-start-3">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Dia
+          </label>
+          <input
+            type="number"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+          />
         </fieldset>
-        <input
-          type="submit"
-          value="validar"
-          className="col-start-3 bg-sky-500 hover:bg-sky-700 rounded-full py-3 px-8 text-white"
-        />
+        <fieldset className="col-start-3">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Hora
+          </label>
+          <input
+            type="number"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+          />
+        </fieldset>
+        <fieldset className="col-start-3">
+          <div className="mb-6">
+            <input
+              type="submit"
+              value="validar"
+              className="bg-slate-400 hover:bg-slate-500 rounded-full py-3 px-8 text-white"
+            />
+          </div>
+        </fieldset>
       </form>
     </>
   );
