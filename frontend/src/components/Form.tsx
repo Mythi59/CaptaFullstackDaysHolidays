@@ -8,11 +8,7 @@ const Form = () => {
         </fieldset>
         <label className="col-start-3 row-start-3">Hora</label>
         <fieldset className="col-start-3 border-2">
-          <input type="number" className="hora" />
-        </fieldset>
-        <label className="col-start-3 row-start-5">Dia</label>
-        <fieldset className="col-start-3 border-2">
-          <input type="number" className="dia" />
+          <input type="time" className="hora" />
         </fieldset>
         <input
           type="submit"

@@ -2,7 +2,7 @@ import Footer from "./Footer";
 import Form from "./Form";
 import Header from "./Header";
 
-const Page = () => {
+const PageBody = () => {
   return (
     <>
       <Header />
@@ -12,4 +12,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default PageBody;
